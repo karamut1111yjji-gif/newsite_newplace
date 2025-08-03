@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересные места</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Светло-серый фон */
+        }
+
+        .container {
+            max-width: 400px; /* Соответствует ширине экрана телефона */
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden; /* Скрывает все, что выходит за границы контейнера */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+        }
+
+        .header {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .search-bar {
+            padding: 10px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            outline: none; /* Убирает обводку при фокусе */
+        }
+
+        .search-bar i {
+            margin-left: 5px;
+            color: #888;
+        }
+
+        .list-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer; /* Меняет курсор на указатель для интерактивности */
+        }
+
+        .list-item:last-child {
+            border-bottom: none; /* Убирает нижнюю границу у последнего элемента */
+        }
+
+        .list-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .list-item h3 {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .list-item p {
+            margin: 0;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .item-type {
+            font-size: 0.7em;
+            color: #999;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer i {
+            color: #555;
+            font-size: 1.5em;
+
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Список интересных мест</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+            <i class="fas fa-search"></i>  <!-- Иконка поиска Font Awesome -->
+        </div>
+
+        <div class="list-item">
+            <img src="j1.jpg" alt="Фотография музея">
+            <span class="item-type">музей</span>
+            <h3>Воронежский областной краеведческий музей</h3>
+            <p>краткое описание</p>
+        </div>
+
+        <div class="list-item">
+            <img src="j2.jpg" alt="Фотография отеля">
+            <span class="item-type">отель</span>
+            <h3>Название отеля</h3>
+            <p>краткое описание</p>
+        </div>
+
+        <div class="list-item">
+            <img src="j3.jpg" alt="Фотография особого места">
+            <span class="item-type">особое место</span>
+            <h3>Название особого места</h3>
+            <p>краткое описание</p>
+        </div>
+
+        <div class="footer">
+            <i class="fas fa-list"></i>  <!-- Пример иконок - замените на нужные -->
+            <i class="fas fa-map"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-cog"></i>
+        </div>
+    </div>
+
+    <script>
+        // Здесь можно добавить JavaScript функциональность, если необходимо (например, поиск).
+    </script>
+
+</body>
+</html>
